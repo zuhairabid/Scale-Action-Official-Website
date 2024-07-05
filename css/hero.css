@@ -1,0 +1,11 @@
+section.hero {
+  background-color: #F9FAFB;
+}
+section.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  gap: 20px;
+}
