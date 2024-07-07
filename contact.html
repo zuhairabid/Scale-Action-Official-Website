@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/pricing.css" />
     <link rel="stylesheet" href="/css/solution.css" />
@@ -85,88 +86,38 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <h1 class="section_title">WORLD CLASS BRANDING SOLUTION</h1>
-
-        <p class="section_subtitle">
-          Sit back and relax. We do the heavy lifting from Marketing to Brand
-          Control and Account management.
-        </p>
-
-        <p class="section_subtitle">
-          Join us for stressless , easy and hassle free branding.
-        </p>
-
-        <button class="btn_1">SEE BELOW WHY WE ARE DIFFERENT</button>
-        <a href="/contact.html" class="btn_2">Or Contact Us to Get Started</a>
+        <form class="form" method="post" action="" id="form">
+            <input type="text" placeholder="Name" name="Name"/>
+            <input
+              type="email"
+              placeholder="Email"
+              name="Email"
+            />
+            <input type="text" placeholder="Whats's your company" name="Company"/>
+            <input
+              type="text"
+              placeholder="How Can We Help?"
+              name="Requirement"
+            />
+            <textarea
+            rows="10"
+              value=""
+              placeholder="What's your Message?"
+              name="Message"
+            ></textarea>
+            <!-- BUTTON 2 -->
+            
+              <button id="submit" type="submit" class="btn_1">
+                SEND
+              </button>
+           
+            <!-- BUTTON 2 -->
+          </form>
       </div>
     </section>
     <!-- HERO -->
-    <!-- SOLUTIONS -->
-
-    <section class="solutions">
-      <div class="container">
-        <h1 class="section_title">All Branding Solutions in One Place</h1>
-        <p class="section_subtitle">
-          We are so confident of our marketing strategy and selling expertise
-          that we welcome you to join us for free. Our goal to maximize sell and
-          grow your brand.
-        </p>
-        <div class="solutions_container">
-          <div class="solution_image_container">
-            <img src="/assets/solutions/solutions.gif" alt="" />
-          </div>
-          <div class="solutions_container_items">
-            <div class="solutions_container_item">
-              <i class="fas fa-bullhorn text-blue-700 text-3xl"></i>
-              <div class="solutions_container_item_content">
-                <h3>Marketing Content & Copy</h3>
-                <p>
-                  You name it, we do it. We have a team focused on content and
-                  copy alone... just for you.
-                </p>
-              </div>
-            </div>
-            <div class="solutions_container_item">
-              <i class="fas fa-shield-alt text-blue-700 text-3xl"></i>
-              <div class="solutions_container_item_content">
-                <h3>Brand Control</h3>
-                <p>
-                  This includes removing unauthorized sellers and monitoring MAP
-                  so your brand value doesn’t get hurt.
-                </p>
-              </div>
-            </div>
-            <div class="solutions_container_item">
-              <i class="fas fa-user-tie text-blue-700 text-3xl"></i>
-              <div class="solutions_container_item_content">
-                <h3>Account Management</h3>
-                <p>A dedicated team you can count on to support your brand.</p>
-              </div>
-            </div>
-            <div class="solutions_container_item">
-              <i class="fas fa-bullseye text-blue-700 text-3xl"></i>
-              <div class="solutions_container_item_content">
-                <h3>Advertising</h3>
-                <p>
-                  A tailored strategy to get more traction to your listings.
-                </p>
-              </div>
-            </div>
-            <div class="solutions_container_item">
-              <i class="fas fa-star text-blue-700 text-3xl"></i>
-              <div class="solutions_container_item_content">
-                <h3>Review Management</h3>
-                <p>
-                  One by one we will put together a customer strategy to help
-                  drive positive reviews and avoid the bad ones.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SOLUTIONS -->
+   <!-- CONTACT -->
+   <!-- CONTACT -->
 
     <!-- ENDING CARD -->
     <section class="ending_card">
@@ -231,5 +182,32 @@
       </div>
     </footer>
     <!-- FOOTER -->
+     <!-- GOOGLE FORM CONTACT -->
+     <script>
+        const form = document.querySelector("#form")
+      const submitButton = document.querySelector("#submit")
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwD8c4DZOcD8qMCOruC2NV-fIhr13jc19IpibZX_TnyN-HKx0i3IQ256bLeJmljYij7/exec'
+    
+      form.addEventListener('submit', e => {
+        submitButton.disabled = true
+        e.preventDefault()
+        let requestBody = new FormData(form)
+        // set request mode to no cors
+        fetch(scriptURL, { method: 'POST', body: requestBody, mode: 'no-cors' }) 
+          .then(response => {
+            console.log(response);
+            //  alert('Form Submitted Successfully !', response)
+             alert('Form Submitted Successfully !')
+             submitButton.disabled = false
+            })
+          .catch(error => {
+          alert('Something Went Wrong!!')
+          // alert('Error!', error.message)
+            submitButton.disabled = false
+    
+          }
+          )
+      })
+      </script>
   </body>
 </html>
