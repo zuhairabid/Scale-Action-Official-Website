@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/css/testimonials.css" />
     <link rel="stylesheet" href="/css/ending-card.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <script
       async
       src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"
@@ -58,32 +60,51 @@
     </script>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <div class="header_info">
-        <p>
-          Want to boost your brand's online presence? Scale Action has the
-          expertise to make it happen! 🌟 <a href="">Learn More.</a>
-        </p>
-      </div>
-      <menu>
-        <div class="container">
-          <div class="header_logo">
-            <h1>ScaleAction</h1>
-          </div>
-          <nav>
-            <a href="/">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="solution.html">Solution</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-            <a href="results.html">Results and Insight</a>
-          </nav>
-          <button class="btn_1">Get Started</button>
+   <!-- HEADER -->
+   <header>
+    <div class="header_info">
+      <p>
+        Want to boost your brand's online presence? Scale Action has the
+        expertise to make it happen! 🌟 <a href="">Learn More.</a>
+      </p>
+    </div>
+    <menu>
+      <div class="container">
+        <div class="header_logo">
+          <h1>ScaleAction</h1>
         </div>
-      </menu>
-    </header>
-    <!-- HEADER -->
+        <nav>
+          <a href="/">Home</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="solution.html">Solution</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="about.html">About Us</a>
+          <a href="results.html">Results and Insight</a>
+        </nav>
+        <button class="btn_1">Get Started</button>
+        <div class="mobile_menu">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </menu>
+    <nav class="mobile">
+      <a href="/">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="solution.html">Solution</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+      <a href="results.html">Results and Insight</a>
+      <button class="btn_1">Get Started</button>
+    </nav>
+    <script>
+      const menu_bar_button = document.querySelector(".mobile_menu")
+      const menu_bar = document.querySelector("nav.mobile")
+      menu_bar_button.addEventListener("click", () => {
+        menu_bar.classList.toggle("menu_toggle")
+      })
+    </script>
+  </header>
+  <!-- HEADER -->
     <!-- HERO -->
     <section class="hero">
       <div class="container">
