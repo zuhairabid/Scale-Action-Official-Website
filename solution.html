@@ -78,8 +78,27 @@
             <a href="results.html">Results and Insight</a>
           </nav>
           <button class="btn_1">Get Started</button>
+          <div class="mobile_menu">
+            <i class="fa fa-bars"></i>
+          </div>
         </div>
       </menu>
+      <nav class="mobile">
+        <a href="/">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="solution.html">Solution</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="results.html">Results and Insight</a>
+        <button class="btn_1">Get Started</button>
+      </nav>
+      <script>
+        const menu_bar_button = document.querySelector(".mobile_menu")
+        const menu_bar = document.querySelector("nav.mobile")
+        menu_bar_button.addEventListener("click", () => {
+          menu_bar.classList.toggle("menu_toggle")
+        })
+      </script>
     </header>
     <!-- HEADER -->
     <!-- HERO -->
@@ -96,7 +115,7 @@
           Join us for stressless , easy and hassle free branding.
         </p>
 
-        <button class="btn_1">SEE BELOW WHY WE ARE DIFFERENT</button>
+        <button class="btn_1">Our Unique Solutions <i class="fas fa-arrow-down"></i></button>
         <a href="/contact.html" class="btn_2">Or Contact Us to Get Started</a>
       </div>
     </section>

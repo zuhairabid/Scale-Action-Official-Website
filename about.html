@@ -7,13 +7,16 @@
 
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/pricing.css" />
     <link rel="stylesheet" href="/css/solution.css" />
     <link rel="stylesheet" href="/css/ending-card.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script
       async
       src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"
@@ -85,41 +88,54 @@
     <!-- HEADER -->
     <!-- HERO -->
     <section class="hero">
-      <h1 class="section_title">Contact Us</h1>
-      <p class="section_subtitle">Get in touch with us. We are very quick to respond</p>
       <div class="container">
-        <form class="form" method="post" action="" id="form">
-            <input type="text" placeholder="Name" name="Name"/>
-            <input
-              type="email"
-              placeholder="Email"
-              name="Email"
-            />
-            <input type="text" placeholder="Whats's your company" name="Company"/>
-            <input
-              type="text"
-              placeholder="How Can We Help?"
-              name="Requirement"
-            />
-            <textarea
-            rows="10"
-              value=""
-              placeholder="What's your Message?"
-              name="Message"
-            ></textarea>
-            <!-- BUTTON 2 -->
-            
-              <button id="submit" type="submit" class="btn_1">
-                SEND
-              </button>
-           
-            <!-- BUTTON 2 -->
-          </form>
+        <h1 class="section_title">
+          ENSURING OUR PARTNERS GROWTH IS OUR PASSION
+        </h1>
+
+        <p class="section_subtitle">
+          We are an experiened team of digital marketers and ecommerce experts.
+          With more than a decade of knowlegde in ecommerce execellency and
+          digital marketing, we can help you grow your brand .
+        </p>
+
+        <p class="section_subtitle">Get fast results from ecommerce experts.</p>
+
+        <button class="btn_1">
+          Read About Us <i class="fas fa-arrow-down"></i>
+        </button>
+        <a href="/contact.html" class="btn_2">Or Contact Us to Get Started</a>
       </div>
     </section>
     <!-- HERO -->
-   <!-- CONTACT -->
-   <!-- CONTACT -->
+    <!-- ABOUT US -->
+    <section class="about-us">
+      <div class="container">
+        <p class="section_top_subtitle">About Us</p>
+        <h2 class="section_title">Your Success Our Commitement</h2>
+       <div class="about-us_content"> 
+        <p>
+          "We don’t just sell stuff online; we shape brands, scale businesses,
+          and turn challenges into solutions. Our team of industry leaders is
+          dedicated to making your journey smoother, your goals achievable, and
+          your results something you can be truly proud of. 
+          
+        </p>
+        <br>
+        <p>At ScaleAction, we
+          take your products and market them on various platforms as if they
+          were our own. This innovative approach not only maximizes your
+          product's reach and revenue but also ensures a seamless integration of
+          your brand identity. We believe in shared success, which is why we
+          partner with you to share the income generated from our collaborative
+          efforts. Together, we build a brand that stands out and thrives in the
+          competitive market. Join us at ScaleAction, where your growth is our
+          mission."
+        </p>
+    </div>
+      </div>
+    </section>
+    <!-- ABOUT US -->
 
     <!-- ENDING CARD -->
     <section class="ending_card">
@@ -140,7 +156,7 @@
       <div class="top_footer">
         <div class="top_footer_container container">
           <div class="top_footer_container_item">
-            <div class="header_logo footer_logo">
+            <div class="header_logo footer_logo" style="padding: 5px;">
               <h1>ScaleAction</h1>
               <div class="social_links">
                 <img src="/assets/socials/facebook.png" alt="" />
@@ -184,32 +200,5 @@
       </div>
     </footer>
     <!-- FOOTER -->
-     <!-- GOOGLE FORM CONTACT -->
-     <script>
-        const form = document.querySelector("#form")
-      const submitButton = document.querySelector("#submit")
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwD8c4DZOcD8qMCOruC2NV-fIhr13jc19IpibZX_TnyN-HKx0i3IQ256bLeJmljYij7/exec'
-    
-      form.addEventListener('submit', e => {
-        submitButton.disabled = true
-        e.preventDefault()
-        let requestBody = new FormData(form)
-        // set request mode to no cors
-        fetch(scriptURL, { method: 'POST', body: requestBody, mode: 'no-cors' }) 
-          .then(response => {
-            console.log(response);
-            //  alert('Form Submitted Successfully !', response)
-             alert('Form Submitted Successfully !')
-             submitButton.disabled = false
-            })
-          .catch(error => {
-          alert('Something Went Wrong!!')
-          // alert('Error!', error.message)
-            submitButton.disabled = false
-    
-          }
-          )
-      })
-      </script>
   </body>
 </html>
