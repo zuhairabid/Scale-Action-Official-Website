@@ -1,0 +1,18 @@
+section.hero {
+  background-color: #f9fafb;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    gap: 20px;
+    .section_title {
+        font-size: 54px;
+        text-align: center;
+        font-weight: 900;
+        font-family: 'Poppins';
+    }
+  }
+}
