@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="/css/solution.css" />
     <link rel="stylesheet" href="/css/ending-card.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <link
       rel="stylesheet"
@@ -62,51 +65,51 @@
     </script>
   </head>
   <body>
-   <!-- HEADER -->
-   <header>
-    <!-- <div class="header_info">
-      <p>
-        Want to boost your brand's online presence? Scale Action has the
-        expertise to make it happen! 🌟 <a href="">Learn More.</a>
-      </p>
-    </div> -->
-    <menu>
-      <div class="container">
-        <div class="header_logo">
-          <h1>Scale Action</h1>
-        </div>
-        <nav>
+    <!-- HEADER -->
+    <header>
+      <!-- <div class="header_info">
+    <p>
+      Want to boost your brand's online presence? Scale Action has the
+      expertise to make it happen! 🌟 <a href="">Learn More.</a>
+    </p>
+  </div> -->
+      <menu>
+        <div class="container">
+          <div class="header_logo">
+            <h1>Scale Action</h1>
+          </div>
+          <nav>
             <a href="/">Home</a>
             <a href="solution.html">Solution</a>
             <a href="pricing.html">Pricing</a>
             <!-- <a href="contact.html">Contact Us</a> -->
             <a href="about.html">About Us</a>
             <a href="results.html">Results and Insight</a>
-        </nav>
-        <button class="btn_1">Contact Us</button>
-        <div class="mobile_menu">
-          <i class="fa fa-bars"></i>
+          </nav>
+          <a href="/contact.html"><button class="btn_1">Contact Us</button></a>
+          <div class="mobile_menu">
+            <i class="fa fa-bars"></i>
+          </div>
         </div>
-      </div>
-    </menu>
-    <nav class="mobile">
-            <a href="/">Home</a>
-            <a href="solution.html">Solution</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-            <a href="results.html">Results and Insight</a>
-      <button class="btn_1">Contact Us</button>
-    </nav>
-    <script>
-      const menu_bar_button = document.querySelector(".mobile_menu")
-      const menu_bar = document.querySelector("nav.mobile")
-      menu_bar_button.addEventListener("click", () => {
-        menu_bar.classList.toggle("menu_toggle")
-      })
-    </script>
-  </header>
-  <!-- HEADER -->
+      </menu>
+      <nav class="mobile">
+        <a href="/">Home</a>
+        <a href="solution.html">Solution</a>
+        <a href="pricing.html">Pricing</a>
+
+        <a href="about.html">About Us</a>
+        <a href="results.html">Results and Insight</a>
+        <button class="btn_1">Contact Us</button>
+      </nav>
+      <script>
+        const menu_bar_button = document.querySelector(".mobile_menu")
+        const menu_bar = document.querySelector("nav.mobile")
+        menu_bar_button.addEventListener("click", () => {
+          menu_bar.classList.toggle("menu_toggle")
+        })
+      </script>
+    </header>
+    <!-- HEADER -->
     <!-- HERO -->
     <section class="hero">
       <div class="container">
@@ -122,9 +125,10 @@
 
         <p class="section_subtitle">Get fast results from ecommerce experts.</p>
 
-        <button class="btn_1">
-          Results and Insights <i class="fas fa-arrow-down"></i>
-        </button>
+        <a href="#results"
+          ><button class="btn_1">
+            Results and Insights <i class="fas fa-arrow-down"></i></button
+        ></a>
         <a href="/contact.html" class="btn_2">Or Contact Us to Get Started</a>
       </div>
     </section>
@@ -153,31 +157,55 @@
         <div class="top_footer_container container">
           <div class="top_footer_container_item">
             <div class="header_logo footer_logo">
-              <h1>ScaleAction</h1>
+              <h1>Scale Action</h1>
               <div class="social_links">
-                <img src="/assets/socials/facebook.png" alt="" />
-                <img src="/assets/socials/instagram.png" alt="" />
-                <img src="/assets/socials/twitter.png" alt="" />
+                <a href=""><img src="/assets/socials/facebook.png" alt="" /></a>
+                <a href="">
+                  <img src="/assets/socials/instagram.png" alt="" />
+                </a>
+                <a href="">
+                  <img src="/assets/socials/twitter.png" alt="" />
+                </a>
               </div>
             </div>
           </div>
           <div class="top_footer_container_item">
             <p class="top_footer_container_item_title">Solutions</p>
-            <p class="top_footer_container_item_link">Marketplace Strategy</p>
-            <p class="top_footer_container_item_link">Costing Strategy</p>
-            <p class="top_footer_container_item_link">Growth Formula</p>
-            <p class="top_footer_container_item_link">FAQ</p>
+            <p class="top_footer_container_item_link">
+              <a href="/solution.html#solutions">Marketplace Strategy</a>
+            </p>
+            <p class="top_footer_container_item_link">
+              <a href="/solution.html#why-us">Why Us</a>
+            </p>
+            <!-- <p class="top_footer_container_item_link"><a href="">Growth Formula</a></p> -->
+            <p class="top_footer_container_item_link">
+              <a href="/pricing.html#faq">FAQ</a>
+            </p>
           </div>
           <div class="top_footer_container_item">
-            <p class="top_footer_container_item_title">Company</p>
-            <p class="top_footer_container_item_link">Contact Us</p>
-            <p class="top_footer_container_item_link">About Us</p>
-            <p class="top_footer_container_item_link">Testimonials</p>
+            <p class="top_footer_container_item_title">Pages</p>
+            <p class="top_footer_container_item_link"><a href="/"> Home </a></p>
+            <p class="top_footer_container_item_link">
+              <a href="/solution.html"> Contact Us </a>
+            </p>
+            <p class="top_footer_container_item_link">
+              <a href="/pricing.html"> Pricing </a>
+            </p>
+            <p class="top_footer_container_item_link">
+              <a href="/about.html"> About Us </a>
+            </p>
+            <p class="top_footer_container_item_link">
+              <a href="/results.html"> Results and insights </a>
+            </p>
           </div>
           <div class="top_footer_container_item">
             <p class="top_footer_container_item_title">Legal</p>
-            <p class="top_footer_container_item_link">Terms of Service</p>
-            <p class="top_footer_container_item_link">Privacy Policy</p>
+            <p class="top_footer_container_item_link">
+              <a href="/terms-of-services.html"> Terms of Service </a>
+            </p>
+            <p class="top_footer_container_item_link">
+              <a href="/privacy-policy.html"> Privacy Policy </a>
+            </p>
           </div>
           <div class="top_footer_container_item">
             <p class="top_footer_container_item_title">Join our newsletter</p>
@@ -191,7 +219,7 @@
       </div>
       <div class="bottom_footer">
         <p class="bottom_footer_text">
-          Copyright © 2022 ScaleAction. All rights reserved.
+          Copyright © 2022 Scale Action. All rights reserved.
         </p>
       </div>
     </footer>

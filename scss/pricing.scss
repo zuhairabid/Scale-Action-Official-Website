@@ -124,3 +124,41 @@ section.comparision_table {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   
+
+  .faq-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 10px 0;
+  }
+  
+  .arrow {
+    transition: transform 0.3s;
+  }
+  
+  .arrow.rotate {
+    transform: rotate(180deg);
+  }
