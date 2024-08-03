@@ -3,9 +3,11 @@ section.hero {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   // height: 70vh;
   .container {
+    height: 50vh;
+   
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 80px 0;
     gap: 20px;
