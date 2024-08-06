@@ -1,5 +1,5 @@
 section.solutions {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 .solution_image_container {
@@ -23,7 +23,7 @@ section.solutions {
 }
 
 .solutions_container {
-    padding-top: 4px;
+  padding-top: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,30 +32,28 @@ section.solutions {
   gap: 40px;
 
   .solutions_container_items {
-   margin-top: 40px;
+    margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     // align-items: center;
     justify-content: center;
     gap: 30px;
-    .solutions_container_item{
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        padding: 30px;
-        border-radius: 10px;
-        i{
-            font-size: 35px;
-            color: var(--primary-color)
-            
-        }
-        h3{
-            color: var(--primary-title-color);
-            margin-bottom: 10px;
-            font-size: 25px;
-        }
-
+    .solutions_container_item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 30px;
+      border-radius: 10px;
+      i {
+        font-size: 35px;
+        color: var(--primary-color);
+      }
+      h3 {
+        color: var(--primary-title-color);
+        margin-bottom: 10px;
+        font-size: 25px;
+      }
     }
   }
 }
@@ -79,16 +77,37 @@ section.solutions {
 }
 
 @media screen and (max-width: 791px) {
-  
   .solutions_container {
     .solutions_container_items {
       grid-template-columns: 1fr;
     }
   }
-  .solution_image_container{
+  .solution_image_container {
     width: 100%;
     padding: 10px;
   }
 }
 
+// ///////////////////////////////////////////////////////
 
+section.action_formula {
+  background-color: #f9fafb;
+  padding: 80px 0;
+  .section_title {
+    margin-bottom: 50px;
+  }
+  margin: 70px 0;
+  .action_formula_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    img {
+      height: 600px;
+    }
+    @media screen and (max-width: 1002px) {
+      flex-direction: column;
+    }
+  }
+}

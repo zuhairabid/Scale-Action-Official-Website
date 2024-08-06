@@ -162,3 +162,30 @@ section.comparision_table {
   .arrow.rotate {
     transform: rotate(180deg);
   }
+
+  // ////////////////////////////////////////////
+
+section.how_pricing_works{
+  background-color: #F9FAFB;
+  padding: 80px 0;
+  .how_pricing_works_container{
+    .how_pricing_works_divider{
+      width: 80%;
+      margin: auto;
+      img{
+        background-color: #fff;
+        width: 100%;
+        padding: 25px;
+        border: 1px solid #ebcccc;
+        border-radius: 28px;
+        @media screen and (max-width: 458px) {
+          padding: 3px;
+        }
+      }
+      @media screen and (max-width: 834px) {
+        width: 100%;
+        
+      }
+    }
+  }
+}
